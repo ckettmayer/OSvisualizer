@@ -15,7 +15,7 @@ from matplotlib.widgets import Slider
 from intensity_functions import Iorb_gauss
 from intensity_functions import Iorb_donut
 from fourier_function import fourier
-# import addcopyfighandler
+
 
 
 

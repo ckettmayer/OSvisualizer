@@ -87,7 +87,7 @@ s = 500
 def update(frame):
     ax1.cla()
 
-    theta_m = theta[frame%24] 
+    theta_m = theta[frame%N] 
     ax1.plot(theta, theta*0+A, color='grey', linestyle= 'dashed')
     ax1.scatter(Phi, R, c=Iorb(R, Phi, A, theta_m, I0, w0), marker='o', s=10, cmap = custom_cmap.reversed(), zorder=1)    #PSF
     ax1.scatter(phi, r, color='y', marker='*', s=400, edgecolors='k', zorder=3)                                           #particle    
@@ -115,7 +115,7 @@ ax2.set_ylim(0, l)
 
 
 # Creates the animation
-animation = FuncAnimation(fig, update, frames=100, interval=500)
+animation = FuncAnimation(fig, update, frames=100, interval=50)
 
 # Saves the animation
 # animation.save('orbital_animation.gif', writer='pillow', fps=30)

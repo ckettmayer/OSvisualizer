@@ -33,7 +33,7 @@ y = 300
 # psf_shape = 'g'
 psf_shape = 'd'
 
-M = 12       # Number of pixels in raster scan (works between 5 and 30)
+M = 12       # Number of pixels in raster scan (between 5 and 30)
 
 
 
